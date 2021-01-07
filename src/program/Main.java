@@ -1,6 +1,7 @@
 package program;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main 
 {
@@ -23,6 +24,8 @@ public class Main
 			names[i][1] = input.nextLine().toUpperCase();			
 		}
 		
+		System.out.println();
+		
 		//WRITE MIDDLE NAME
 		for (int i = 0; i < names.length; i++) 
 		{
@@ -37,9 +40,22 @@ public class Main
 		{
 			System.out.printf("%s %s %s %n", names[i][0], names[i][1], names[i][2]);
 		}
-				
+			
+		System.out.println();
+		
+		//PRINTING THE ADRESS
+		for(String[] name: names)
+		{
+			System.out.println(name);
+		}
+		
+		System.out.println();
+		
+		for(String[] name: names)
+		{
+			System.out.println(Arrays.toString(name));
+		}
 		
 		input.close();
-	
 	}
 }
