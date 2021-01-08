@@ -56,6 +56,18 @@ public class Main
 			System.out.println(Arrays.toString(name));
 		}
 		
+		System.out.println();
+		System.out.printf("\nTHE LAST WAY%n%n");
+		
+		//WITH .LENGHT MORE INTELIGENT 
+		for (int i = 0; i < names.length; i++) 
+		{
+			for (int j = 0; j < names[i].length; j++) 
+			{
+				System.out.println(names[i][j]);
+			}
+		}
+		
 		input.close();
 	}
 }
